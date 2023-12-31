@@ -4,12 +4,12 @@ describe('Login Test', () => {
     cy.visit('http://127.0.0.1:5500/public/login.html');
 
     // Input credentials
-    cy.get('#username').type('galib71');
+    cy.get('#username', { timeout: 5000 }).type('galib71');  // Exapmle to override default timeout
     cy.get('#password').type('123456');
 
     // Submit the form
     cy.get('form').submit();
-    cy.wait(10000);
+    cy.wait(5000);
 
     // Assertion check for successfull login
     cy.url().should('include', '/home.html');
