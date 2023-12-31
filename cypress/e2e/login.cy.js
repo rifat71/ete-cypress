@@ -3,7 +3,7 @@
 describe('Login Test', () => {
   it('log in with valid credentials', async () => {
     // Visit the link
-    cy.visit('http://127.0.0.1:5500/public/login.html');
+    cy.visit('/public/login.html');
 
     // Input credentials
     cy.get('#username', { timeout: 5000 }).type('galib');  // Exapmle to override default timeout
@@ -19,10 +19,10 @@ describe('Login Test', () => {
 
   it('log in with invalid credentials', () => {
     // Visit the link
-    cy.visit('http://127.0.0.1:5500/public/login.html');
+    cy.visit('/public/login.html');
 
     // Input credentials
-    cy.get('#username', { timeout: 5000 }).type('rifat');
+    cy.get('#username').type('rifat');
     cy.get('#password').type('12345');
 
     // Click the login button
