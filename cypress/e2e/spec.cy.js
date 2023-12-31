@@ -3,8 +3,8 @@ describe('Login Test', () => {
     cy.visit('/'); // Assumes your login page is at the root path
 
     // Fill in the login form
-    cy.get('#username').type('your-username');
-    cy.get('#password').type('your-password');
+    cy.get('#username').type('galib71');
+    cy.get('#password').type('123456');
 
     // Submit the form
     cy.get('form').submit();
