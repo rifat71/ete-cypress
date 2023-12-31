@@ -1,6 +1,8 @@
+// import 'cypress-wait-until';
+
 describe('Login Test', () => {
-  it('should log in with valid credentials', () => {
-    // Visit the website
+  it('log in with valid credentials', async () => {
+    // Visit the link
     cy.visit('http://127.0.0.1:5500/public/login.html');
 
     // Input credentials
@@ -9,13 +11,12 @@ describe('Login Test', () => {
 
     // Submit the form
     cy.get('form').submit();
-    cy.wait(5000);
 
     // Assertion check for successfull login
-    cy.url().should('include', '/home.html');
+    cy.url().should('include', '/homey.html');
   });
 
-  //   it('should display an error message with invalid credentials', () => {
+  //   it('log in with invalid credentials', () => {
   //     cy.visit('/');
 
   //     // Fill in the login form with invalid credentials
