@@ -1,7 +1,7 @@
 describe('Login Test', () => {
   it('should log in with valid credentials', () => {
     // Visit the website
-    cy.visit('http://127.0.0.1:5500/login.html');
+    cy.visit('http://127.0.0.1:5500/public/login.html');
 
     // Input credentials
     cy.get('#username').type('galib71');
