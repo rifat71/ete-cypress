@@ -1,47 +1,77 @@
-/* Add or modify styles as needed for the new sections */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
+}
 
-.picture-section {
-    margin-top: 30px;
+.header {
+    background-color: #fff;
+    padding: 15px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.movable-picture {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    cursor: pointer;
-    transition: transform 0.3s ease;
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
 }
 
-.movable-picture:hover {
-    transform: scale(1.1);
+.navigation a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+}
+
+.product-section {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.product-card {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.product-card img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.price {
+    color: #4caf50;
+    font-weight: bold;
+}
+
+.feedback-section {
+    max-width: 800px;
+    margin: 20px auto;
 }
 
 .feedback-card {
-    margin-top: 30px;
     background-color: #fff;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-}
-
-.feedback-item {
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     margin-bottom: 15px;
 }
 
-.contact-section,
-.confirm-section {
-    margin-top: 30px;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+.contact-section {
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: center;
 }
 
 .contact-section a {
     color: #4caf50;
+    text-decoration: none;
 }
 
 .contact-section a:hover {
