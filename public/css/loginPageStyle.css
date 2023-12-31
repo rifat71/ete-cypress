@@ -44,3 +44,28 @@ button {
 button:hover {
     background-color: #45a049;
 }
+
+.toast-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 10px;
+    z-index: 1000;
+}
+
+.toast {
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    transition: opacity 0.5s ease;
+}
+
+.toast.error {
+    background-color: #ff5555;
+}
+
+.toast.success {
+    background-color: #285812;
+}

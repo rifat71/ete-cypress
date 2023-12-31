@@ -1,19 +1,19 @@
 // import 'cypress-wait-until';
 
 describe('Login Test', () => {
-  it('log in with valid credentials', async () => {
+  it('log in with valid credentials', () => {
     // Visit the link
     cy.visit('/public/login.html');
 
     // Input credentials
-    cy.get('#username', { timeout: 5000 }).type('galib');  // Exapmle to override default timeout
-    cy.get('#password').type('123456');
+    cy.get('#username', { timeout: 8000 }).invoke('focus').clear().type('galib');  // Exapmle to override default timeout
+    cy.get('#password').invoke('focus').clear().type('123456');
 
     // Click the login button
     cy.get('#login_button').click();
 
     // Assertion check for successfull login
-    cy.url().should('include', '/homey.html');
+    cy.url().should('include', '/home.html');
   });
 
 
@@ -22,13 +22,13 @@ describe('Login Test', () => {
     cy.visit('/public/login.html');
 
     // Input credentials
-    cy.get('#username').type('rifat');
-    cy.get('#password').type('12345');
+    cy.get('#username').invoke('focus').clear().type('rifat');
+    cy.get('#password').invoke('focus').clear().type('12345');
 
     // Click the login button
     cy.get('#login_button').click();
 
     // Assertion check for successfull login
-    cy.url().should('include', '/homey.html');
+    cy.url().should('include', '/home.html');
   });
 });
