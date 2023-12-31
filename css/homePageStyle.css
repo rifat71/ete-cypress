@@ -7,23 +7,23 @@ body {
 }
 
 .header {
-    background-color: #fff;
+    background-color: #4caf50;
     padding: 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .logo {
     font-size: 1.5em;
     font-weight: bold;
+    color: #fff;
 }
 
 .navigation a {
     margin: 0 15px;
     text-decoration: none;
-    color: #333;
+    color: #fff;
 }
 
 .product-section {
@@ -35,14 +35,31 @@ body {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
+.product-container {
+    display: flex;
+    overflow-x: auto;
+}
+
 .product-card {
+    flex: 0 0 250px;
     text-align: center;
-    margin-bottom: 20px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background-color: #fff;
 }
 
 .product-card img {
     max-width: 100%;
-    border-radius: 8px;
+    border-radius: 8px 8px 0 0;
+}
+
+.product-card h3,
+.product-card p,
+.product-card button {
+    margin: 10px;
 }
 
 .price {
