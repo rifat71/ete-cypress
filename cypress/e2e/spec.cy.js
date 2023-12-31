@@ -1,17 +1,18 @@
 describe('Login Test', () => {
   it('should log in with valid credentials', () => {
-    cy.visit('http://localhost:3000/login.html'); // Assumes your login page is at the root path
+    // Visit the website
+    cy.visit('http://127.0.0.1:5500/login.html');
 
-    // Fill in the login form
+    // Input credentials
     cy.get('#username').type('galib71');
     cy.get('#password').type('123456');
 
     // Submit the form
     cy.get('form').submit();
+    cy.wait(10000);
 
-    // Add assertions based on your application behavior
-    // For example, check if the user is redirected to a dashboard page
-    // cy.url().should('include', '/dashboard');
+    // Assertion check for successfull login
+    cy.url().should('include', '/home.html');
   });
 
   //   it('should display an error message with invalid credentials', () => {
