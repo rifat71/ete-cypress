@@ -1,0 +1,49 @@
+/* Add or modify styles as needed for the new sections */
+
+.picture-section {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.movable-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.movable-picture:hover {
+    transform: scale(1.1);
+}
+
+.feedback-card {
+    margin-top: 30px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.feedback-item {
+    margin-bottom: 15px;
+}
+
+.contact-section,
+.confirm-section {
+    margin-top: 30px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.contact-section a {
+    color: #4caf50;
+}
+
+.contact-section a:hover {
+    text-decoration: underline;
+}
