@@ -92,7 +92,7 @@ To run the tests, use the following command:
 #!/bin/bash
  npm run spec fileName
 ```
-To launch the Cypress Test Runner and allow us to run and debug tests interactively.
+To launch the Cypress Test Runner and allow us to run and debug tests interactively:
 ```
 #!/bin/bash
  npx cypress open
