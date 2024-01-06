@@ -1,5 +1,5 @@
-** Cypress Testing Project **
-This repository contains the Cypress testing project for [Your Web Page Name]. The project is designed to automate end-to-end tests for the web application, ensuring its functionality and preventing regressions.
+# Cypress Testing Project
+This repository contains the Cypress testing project for my website (local). The project is designed to automate end-to-end tests for the web application, ensuring its functionality.
 
 Table of Contents
 Prerequisites
