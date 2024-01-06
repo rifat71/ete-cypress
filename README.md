@@ -50,6 +50,8 @@ Install the project dependencies:
 ├── resources
 ├── public/
 │   ├── assets
+│   │   ├── img
+│   │   │   ├── product1.jpeg
 │   ├── css
 │   │   ├── homePageStyle.css
 │   │   └── loginPageStyle.css
@@ -63,37 +65,35 @@ Install the project dependencies:
 ├── package.json
 ├── README.md
 ```
-cypress/: Contains Cypress-specific files and directories.
-fixtures/: Store static data used by tests.
-integration/: Location for your test files.
-plugins/: Customize or extend Cypress functionalities.
-support/: Custom commands and other support files.
-videos/: Store recorded test videos.
-node_modules/: Node.js modules and packages.
-.gitignore: Specifies intentionally untracked files to ignore.
-cypress.json: Cypress configuration file.
-package.json: Node.js project configuration.
-README.md: Project documentation.
-your_web_page/: Directory containing HTML and CSS files for the web page.
-Configuration
-Adjust Cypress configuration in cypress.json if necessary. Common configurations include:
-
-baseUrl: Set the base URL for your application.
-videosFolder: Specify the folder to store test videos.
+```
+> cypress/: Contains Cypress-specific files and directories.
+> fixtures/: Store static data used by tests.
+> e2e/: Location for my test files.
+> support/: Custom commands and other support files.
+> node_modules/: Node.js modules and packages.
+> .gitignore: Specifies intentionally untracked files to ignore.
+> cypress.json: Cypress configuration file.
+> package.json: Node.js project configuration.
+> README.md: Project documentation.
+> public/: Directory containing HTML and CSS files and js validation file for the web page.
+```
+### Configuration
+```
+We can adjust Cypress configuration in >cypress.config.js if necessary. Common configurations include:
+baseUrl: "http://127.0.0.1:5500"
 Other Cypress configuration options.
-Writing Tests
-Write your tests in the cypress/integration/ directory. Cypress supports both JavaScript and CoffeeScript for writing tests. Example tests can be found in cypress/integration/example_spec.js.
+```
+### Writing Tests
+Write tests in the cypress/e2e/ directory. Cypress supports both JavaScript and CoffeeScript for writing tests.
 
-Running Tests
+### Running Tests
 To run the tests, use the following command:
-
-bash
-Copy code
-npm test
-This command will launch the Cypress Test Runner, allowing you to interactively run and debug tests.
-
-To run tests in headless mode (suitable for CI/CD), use:
-
-bash
-Copy code
-npm run test:headless
+```bash
+#!/bin/bash
+ npm run spec fileName
+```
+To launch the Cypress Test Runner and allow us to run and debug tests interactively.
+```
+#!/bin/bash
+ npx cypress open
+```
