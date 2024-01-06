@@ -40,20 +40,28 @@ Install the project dependencies:
 │   │   ├── login.cy.js
 │   ├── fixtures/
 │   │   ├── example.json
-│   ├── plugins/
-│   │   └── index.js
+│   ├── screenshots/
+│   │   ├── login.cy.js
+|   │   |   ├── Login Test -- log in with invalid credentials (failed).png
 │   ├── support/
 │   │   ├── commands.js
 │   │   └── index.js
-│   └── videos/
 ├── node_modules/
+├── resources
+├── public/
+│   ├── assets
+│   ├── css
+│   │   ├── homePageStyle.css
+│   │   └── loginPageStyle.css
+│   ├── js 
+│   │   ├── loginValidation.js
+│   ├── home.html
+│   ├── login.html
 ├── .gitignore
 ├── cypress.json
+├── package-lock.json
 ├── package.json
 ├── README.md
-└── your_web_page/
-    ├── index.html
-    └── styles.css
 ```
 cypress/: Contains Cypress-specific files and directories.
 fixtures/: Store static data used by tests.
