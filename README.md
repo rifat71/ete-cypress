@@ -1,4 +1,4 @@
-# Cypress Project
+# Cypress Framework
 This repository contains the Cypress testing project for my website (local). The project is designed to automate end-to-end tests for the web application, ensuring its functionality.
 
 ## Table of Contents
