@@ -32,14 +32,14 @@ Install the project dependencies:
  npm install
 ```
 
-Project Structure
-go
-Copy code
+### Project Structure
+```
 ├── cypress/
+│   ├── downloads/
+│   ├── e2e/
+│   │   ├── login.cy.js
 │   ├── fixtures/
-│   ├── integration/
-│   │   ├── example_spec.js
-│   │   └── your_tests_spec.js
+│   │   ├── example.json
 │   ├── plugins/
 │   │   └── index.js
 │   ├── support/
@@ -54,6 +54,7 @@ Copy code
 └── your_web_page/
     ├── index.html
     └── styles.css
+```
 cypress/: Contains Cypress-specific files and directories.
 fixtures/: Store static data used by tests.
 integration/: Location for your test files.
