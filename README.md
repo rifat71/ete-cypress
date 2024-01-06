@@ -1,38 +1,37 @@
 # Cypress Testing Project
 This repository contains the Cypress testing project for my website (local). The project is designed to automate end-to-end tests for the web application, ensuring its functionality.
 
-Table of Contents
-Prerequisites
-Installation
-Project Structure
-Configuration
-Writing Tests
-Running Tests
-CI/CD Integration
-Reporting
-Contributing
-License
-Prerequisites
+## Table of Contents
+* Prerequisites
+* Installation
+* Project Structure
+* Configuration
+* Writing Tests
+* Running Tests
+
+### Prerequisites
 Before getting started, ensure that you have the following installed on your machine:
-
-Node.js (version X.X or higher)
-npm (version X.X or higher)
-Installation
+```
+Node.js (version 14 or higher)
+npm (version 6.14.18 or higher)
+```
+### Installation
 Clone this repository to your local machine:
-
-bash
-Copy code
-git clone https://github.com/your-username/your-cypress-project.git
+```bash
+#!/bin/bash
+ git clone https://github.com/rifat71/ete-cypress.git
+```
 Navigate to the project directory:
-
-bash
-Copy code
-cd your-cypress-project
+```bash
+#!/bin/bash
+ cd ete-cypress
+```
 Install the project dependencies:
+```bash
+#!/bin/bash
+ npm install
+```
 
-bash
-Copy code
-npm install
 Project Structure
 go
 Copy code
